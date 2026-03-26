@@ -16,3 +16,20 @@ console.log(initials);
 
 
 
+// Question 2 Ask for inputs
+let sentence = prompt("Enter a sentence:");
+let letter = prompt("Enter a letter to find:");
+
+// Find position (first occurrence)
+let position = sentence.indexOf(letter);
+
+// Output result
+if (position !== -1) {
+  console.log(`The letter "${letter}" is at position ${position}`);
+} else {
+  console.log(`Letter "${letter}" not found`);
+}
+
+
+
+
