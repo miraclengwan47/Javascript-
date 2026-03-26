@@ -33,3 +33,19 @@ if (position !== -1) {
 
 
 
+//  Question 3 Ask for inputs
+let firstName = prompt("Enter your first name:");
+let lastName = prompt("Enter your last name:");
+
+// Convert to lowercase
+firstName = firstName.toLowerCase();
+lastName = lastName.toLowerCase();
+
+// Count total characters
+let totalLength = firstName.length + lastName.length;
+
+// Create username
+let username = `${firstName}${lastName}_${totalLength}`;
+
+// Output result
+console.log(username);
